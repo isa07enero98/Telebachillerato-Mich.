@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<body>
+	<!--======================================== Boton ir arriba ========================================-->
+	<i class="btn-up fa fa-arrow-circle-o-up hidden-xs"></i>
+	<!--======================================== Navegación ========================================-->
+	<header class="full-reset header">
+		<!--======================================== Logo(Nombre INS) ========================================-->
+		<div class="full-reset logo">
+			<span class="hidden-lg hidden-md">Tele</span>
+			<span class="hidden-xs hidden-sm">Telebachillerato Michoacán</span>
+		</div>
+		<!--======================================== Links de navegación ========================================-->
+		<nav class="full-reset navigation">
+			<ul class="full-reset list-unstyled">
+				<li> @Html.ActionLink("Inicio", "Index", "Home", new { @class = "nav-link" }) <a href="index.html"></a></li>
+				<li>@Html.ActionLink("Instictucion", "institucion", "Home", new { @class = "nav-link" }) <a href="institucion.html"></a></li>
+				<li>@Html.ActionLink("Secretaria", "secretaria", "Home", new { @class = "nav-link" }) <a href="secretaria.html"></a></li>
+				<li>@Html.ActionLink("Bachilleratos", "bachilleratos", "Home", new { @class = "nav-link" }) <a href="bachilleratos.html"></a></li>
+				<li>@Html.ActionLink("Galeria", "galeria", "Home", new { @class = "nav-link" }) <a href="galeria.html"></a></li>
+				<li>@Html.ActionLink("Login", "Login", "Home", new { @class = "nav-link" }) <a href="galeria.html"></a></li>
+				<li><a href="#" class="btm-mega-menu"> &nbsp;<i class="fa fa-caret-down"></i></a></li>
+			</ul>
+		</nav>
+	</header>
+		<!--======================================== Mega menu ========================================-->
+		<section class="full-reset font-cover" style="background-image: url(assets/img/font-index.jpg);">
+			<div class="full-reset" style="height: 100%; background-color: rgba(255,255,255,.6); padding: 60px 0;">
+				<h1 class="text-center titles">Telebachillerato Michoacán</h1>
+				<figure class="Logo-Ins-Index">
+					<img src="@Url.Content("~/Content/img/TelebachilleratoMichoacán.jpg")" alt="Logo" class="img-responsive">
+				</figure>
+				<p class="lead text-center">
+					"Vamos por el exito"
+				</p>
+			</div>
+		</section>
+		<div class="divider-general"></div>
+		
+	<div class="fa-centercode"
+		<div class="col-md-6" style="padding: 4%;border: 1px solid #5d652852;border-radius: 5px;">
+			<h4 style="text-align: center;font-weight: bold;">Ingresar</h4>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+				<input name="email" class="form-control" id="email" type="text" placeholder="Matricula">
+			</div>
+			<div id="error-email" style="display: none; color: red;">Matricula</div>
+			<br>
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
+				<input name="password" class="form-control" id="password" type="password" placeholder="Curp">
+			</div>
+			<div id="error-password" style="display: none; color: red;">Curp</div>
+			<div style="text-align: center;">
+				<div id="loader" style="text-align: center;display: none;">
+					<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i>
+					<span class="sr-only">Cargando...</span>
+				</div>
+				<br>
+				<button class="btn btn-success btn-md" id="btn_entrar" style="width: 35%;" type="button">Enviar</button>
+			</div>
+		</div>
+	</div>
+	
+		<!--======================================== Pie de pagina ========================================-->
+		<footer class="full-reset footer">
+			<div class="full-reset" style="padding: 15px 0;">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4">
+							<h4 class="titles text-center">Visitenos en</h4>
+							<p class="text-center">Río Amatlán #187 Col. Cuauhtémoc Morelia, CP. 58020
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<h4 class="titles text-center">Contactenos</h4>
+							<p class="text-center">01 443 312 4909 <br>Correo Electrónico: contacto.tebam@gmail.com</p>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<h4 class="titles subtitles-footer">Siguenos en</h4>
+							<ul class="list-unstyled links-footer">
+								<li><a href="#!" class="open-link-newTab"><i class="fa fa-facebook"></i> &nbsp; Facebook</a></li>
+								<li><a href="#!" class="open-link-newTab"><i class="fa fa-twitter"></i> &nbsp; Twitter</a></li>
+								<li><a href="#!" class="open-link-newTab"><i class="fa fa-google-plus"></i> &nbsp; Google+</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-12">
+							<div class="full-reset footer-copyright"><i class="fa fa-copyright"></i> 2019-2020 </div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</footer>
+	
+</body>
+	
+	
+
+
+
