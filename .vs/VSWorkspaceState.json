@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\App_Start",
+    "\\Content\\css",
+    "\\gitignore",
+    "\\Iconos",
+    "\\Views",
+    "\\Views\\Home"
   ],
-  "SelectedNode": "\\Controllers",
+  "SelectedNode": "\\gitignore",
   "PreviewInSolutionExplorer": false
 }
